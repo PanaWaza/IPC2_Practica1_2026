@@ -12,14 +12,14 @@ namespace Clase_Mascotas
         public string Codigo { get; private set; } 
         public bool Estado { get; set; } // true sano, false enfermo 
 
-        public Mascotas(string nombre, double peso, char sexo, int edad, string propietario, bool estado)
+        public Mascotas(string nombre, double peso, char sexo, int edad, string propietario)
         {
             this.Nombre = nombre;
             this.Peso = peso;
             this.Sexo = sexo;
             this.Edad = edad;
             this.Propietario = propietario;
-            this.Estado = estado;
+            this.Estado = false;
             this.Codigo = GenerarCodigoMascota(); 
         }
 
@@ -53,5 +53,7 @@ namespace Clase_Mascotas
                               $"- Estado: {(this.Estado ? "Sano" : "Enfermo")}\n" +
                               "-----------------------------------");
         }
+
+        
     } 
 }

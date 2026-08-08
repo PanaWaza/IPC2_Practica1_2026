@@ -6,7 +6,7 @@ namespace Clase_Mascotas
         public string Raza { get; set; }
         public double Tamano { get; set; } 
 
-        public Perro(string nombre, double peso, char sexo, int edad, string propietario, bool estado, string raza, double tamano)
+        public Perro(string nombre, double peso, char sexo, int edad, string propietario, string raza, double tamano)
             : base(nombre, peso, sexo, edad, propietario, estado)
         {
             this.Raza = raza;

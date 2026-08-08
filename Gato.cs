@@ -5,8 +5,8 @@ namespace Clase_Mascotas {
 
         private string Raza {get; set;}
 
-        public Gato (string nombre, double peso, char sexo, int edad, string propietario, bool estado,string raza)
-        : base (nombre,peso,sexo,edad,propietario,estado){
+        public Gato (string nombre, double peso, char sexo, int edad, string propietario,string raza)
+        : base (nombre,peso,sexo,edad,propietario){
             this.Raza = raza;
         }
         
